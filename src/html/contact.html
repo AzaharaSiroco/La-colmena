@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/d014abe531.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <title>Contacto</title>
+  </head>
+  <body class="contact">
+    <include src="./partials/header.html"><a href="index.html"></a></include>
+  <div class="hero_contact"></div>
+      <section class="containergeneral_contact">
+        <h2 class="contact_title">Contacto</h2>
+        <div class="contact_text">
+          <p class="contact-description">
+            Si quieres contactar con estas abejas, rellena este formulario y te contestaremos volando.
+          </p>
+          <br>
+            <small class="text-small"> Todos los campos marcados con <span class="asterisk">*</span> son
+              obligatorios.</small>
+          </br>
+        </div>
+        <form
+          class="contact-form"
+          action="https://formspree.io/f/mbjpqobw"
+          method="POST"
+        >
+          <div class="form-field name">
+            <label class="label" for="name"
+              >Nombre completo <span class="asterisk">*</span></label
+            >
+            <input
+              class="input"
+              id="name"
+              type="text"
+              name="name"
+              placeholder="Nombre..."
+              required
+            />
+          </div>
+          <div class="details">
+            <div class="form-field-email">
+              <label class="label" for="email"
+                >Email <span class="asterisk">*</span></label
+              >
+              <input
+                class="input"
+                id="email"
+                type="email"
+                name="email"
+                placeholder="nombre.apellidos@mail.com"
+                required
+              />
+            </div>
+            <div class="form-field-phone">
+              <label class="label" for="telephone">Teléfono</label>
+              <input
+                class="input"
+                id="telephone"
+                type="tel"
+                name="telephone"
+                placeholder="Ej: 123456789"
+              />
+            </div>
+          </div>
+          <div class="input">
+            <label class="label" for="message"
+              >Mensaje <span class="asterisk">*</span></label
+            >
+            <textarea
+              class="input"
+              id="message"
+              type="text-area"
+              name="message"
+              placeholder="¿Qué necesitas?"
+              rows="7"
+              columns="7"
+              required
+            ></textarea>
+          </div>
+          <div class="form-submit">
+            <input class="button-submit" type="submit" value="Enviar" />
+          </div>
+        </form>
+      </section>
+    </main>
+    <include src="./partials/footer.html"></include>
+  </body>
+</html>
